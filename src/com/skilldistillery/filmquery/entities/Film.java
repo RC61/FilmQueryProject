@@ -112,10 +112,10 @@ public class Film {
 
 	public void displayInfo() {
 		System.out.println("Title: " + title);
+		System.out.println("Language: " + language);
 		System.out.println("Description: " + description);
 		System.out.println("Release Year: " + releaseYear);
 		System.out.println("Rating: " + rating);
-		System.out.println("Language: " + language);
 		System.out.println("List of Actors");
 		for (Actor actor : filmActors) {
 			System.out.println(actor);
@@ -124,8 +124,8 @@ public class Film {
 
 	@Override
 	public String toString() {
-		return "Film [title=" + title + ", description=" + description + ",\n releaseYear=" + releaseYear + ", rating="
-				+ rating + ", language =" + language + ", list of actors=\n" + filmActors + "]";
+		return "Film [title=" + title + ", language =" + language + ", description=" + description + ",\n releaseYear=" + releaseYear + ", rating="
+				+ rating + ", list of actors=\n" + filmActors + "]";
 	}
 
 	public int getId() {
